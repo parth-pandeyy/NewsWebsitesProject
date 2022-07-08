@@ -16,7 +16,7 @@ def category(request,name):
     response = data.json()
     articles = response['articles']
     context = {'articles':articles, 'category':name}
-     return render(request,'category.html',context)
+    return render(request,'category.html', context)
 
 def search(request):
     search_term = request.GET['search']
